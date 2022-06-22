@@ -1,0 +1,30 @@
+----------Summary----------
+
+
+---Project Info---
+	->com.berkay.test.0.0.1-SNAPSHOT
+
+
+---Developers---
+	->Developer 1 Name: Berkay Emre Turhan
+
+->Release Date: 19-06-2022
+
+
+---Dependencies---
+	->Dependency: junit.junit
+	->Dependency: mysql.mysql-connector-java
+	->Dependency: org.apache.maven.plugins.maven-dependency-plugin
+
+
+---Plugins---
+	->Plugin: maven-dependency-plugin
+	->Plugin: summary-maven-plugin
+	->Plugin: maven-clean-plugin
+	->Plugin: maven-resources-plugin
+	->Plugin: maven-jar-plugin
+	->Plugin: maven-compiler-plugin
+	->Plugin: maven-surefire-plugin
+	->Plugin: maven-install-plugin
+	->Plugin: maven-deploy-plugin
+	->Plugin: maven-site-plugin
