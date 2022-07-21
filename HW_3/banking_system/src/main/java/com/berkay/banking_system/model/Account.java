@@ -13,7 +13,7 @@ public class Account {
 	private String tc;
 	private String type;
 	private long accountNumber;
-	private String lastUpdateDate;
+	private long lastUpdateDate;
 	@Builder.Default
 	private double balance=0.0;
 }
