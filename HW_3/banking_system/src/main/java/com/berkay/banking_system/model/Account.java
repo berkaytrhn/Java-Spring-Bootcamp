@@ -1,5 +1,7 @@
 package com.berkay.banking_system.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.Builder;
 import lombok.Data;
 
@@ -13,6 +15,7 @@ public class Account {
 	private String tc;
 	private String type;
 	private long accountNumber;
+	@JsonIgnore
 	private long lastUpdateDate;
 	@Builder.Default
 	private double balance=0.0;
