@@ -1,0 +1,7 @@
+5 deposit amount:50.0
+2 deposit amount:50.0
+3 deposit amount:50.0
+1 deposit amount:50.0
+4 deposit amount:50.0
+4 deposit amount:500.0
+1 transfer transferredAccountId:2,amount:50.0

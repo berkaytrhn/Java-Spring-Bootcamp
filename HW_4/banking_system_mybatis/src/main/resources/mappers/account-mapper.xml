@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "com.berkay.banking_system_mybatis.repository.IAccountRepository">
+
+
+
+	<select id="findById" resultType="Account" >
+		SELECT * FROM accounts WHERE id= #{id}
+	</select>
+
+
+	<update id="updateRecord" parameterType="Account">
+		UPDATE accounts
+		SET name = #{name},
+			surname = #{surname}, 
+			email = #{email}, 
+			tc = #{tc}, 
+			type = #{type}, 
+			account_number = #{accountNumber}, 
+			last_update_date = #{lastUpdateDate}, 
+			balance = #{balance}
+		WHERE id=#{id};
+			
+	</update>
+	
+		
+	<update id = "deleteById" parameterType = "map">
+      UPDATE accounts
+      SET 
+      	is_deleted=#{deleted},
+      	last_update_date=#{lastUpdateDate} 
+      WHERE id = #{accountId};
+   </update>
+	
+	
+	
+	<insert id="createRecord" parameterType="Account">
+		INSERT INTO accounts(name, surname, email, tc, type, account_number, last_update_date, balance)
+		VALUES(
+			#{name},
+			#{surname}, 
+			#{email}, 
+			#{tc}, 
+			#{type}, 
+			#{accountNumber}, 
+			#{lastUpdateDate}, 
+			#{balance}
+		)
+	</insert>
+</mapper>	
