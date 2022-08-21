@@ -1,0 +1,5 @@
+1 deposit amount:10.0
+2 deposit amount:10.0
+3 deposit amount:10.0
+4 deposit amount:10.0
+3 transfer transferredAccountId:4,amount:1.0
